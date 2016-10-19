@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no" />
+<title>无标题文档</title>
+<link href="css/base.css" rel="stylesheet" />
+<style>
+	html{font-size:20px;}
+	.wrap{width:16rem;}
+	header{width:100%; height:2.525rem; background:-webkit-linear-gradient(#fff,#ebebeb); overflow:hidden; text-align:center;}
+	header .back{width:3.25rem; height:1.6rem; background:url(img/back.png); position:absolute; top:0.5rem; left:0.5rem; text-indent:-999rem; background-size:100%;}
+	header .logo{display:inline-block; width:9.4rem; height:2.2rem; font-size:0.65rem; color:#333; margin-top:0.175rem; line-height:2.2rem;}
+	header .classify{width:2.55rem; height:1.55rem; background:url(img/classify.png); position:absolute; top:0.5rem; background-size:100%; text-indent:-999rem; box-shadow:0 0 0.2rem #e1e1e1;}
+	nav{width:100%; height:2rem; border-bottom:0.025rem solid #dcdcdc;}
+	nav a{width:3.98125rem; height:100%; box-sizing:border-box; border-right:0.025rem solid #dcdcdc; text-align:center; line-height:2rem; font-size:0.6rem; color:#999; font-weight:bold;}
+	nav a:last-child{border-right:none;}
+	nav a:nth-child(3){color:#d51942;}
+	.goods_list .list div{width:100%; height:6.45rem; box-sizing:border-box; border-bottom:0.025rem solid #e1e1e1; padding-top:0.7rem; padding-left:0.5rem;}
+	.goods_list img{width:15rem;}
+</style>
+<script>
+	;(function(win,doc){
+		var rem = 20/320*doc.documentElement.clientWidth;
+		doc.documentElement.style.fontSize = rem+'px';
+		win.addEventListener('resize',function(){
+			rem = 20/320*doc.documentElement.clientWidth;
+			doc.documentElement.style.fontSize = rem+'px';	
+		},false);	
+	})(window,document);
+</script>
+</head>
+
+<body>
+	<section class="wrap">
+    	<header>
+        	<a href="jhs-home.html" class="back">返回</a>
+            <h2 class="logo">品牌团</h2>
+        </header>
+        <nav class="clearfix">
+        	<a href="jhs-goods.html" class="fl">商品</a>
+        	<a href="jhs-life.html" class="fl">生活</a>
+        	<a href="jhs-brand.html" class="fl">品牌</a>
+        	<a href="jhs-jbp.html" class="fl">聚宝盆</a>
+        </nav>
+    </section>
+    <section class="goods_list">
+    	<div class="list clearfix">
+        	<div><img src="img/p1.png"></div>
+        	<div><img src="img/p2.png"></div>
+        	<div><img src="img/p3.png"></div>
+        </div>
+    </section>
+</body>
+</html>

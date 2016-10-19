@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no,inital-scale=1" >
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/swiper.min.css">
+<style>
+	html{font-size:20px;}
+	*{margin:0; padding:0; list-style:none;}
+	.banner{height:6.125rem; position:relative; overflow:hidden;}
+	.banner ul{height:5.35rem; width:80rem; position:absolute; left:0; top:0;}
+	.banner ul li{height:100%; float:left;}
+	.banner ul li:nth-child(1){background:url(img/banner-1.png); -webkit-background-size:100%;}
+	.banner ul li:nth-child(2){background:url(img/banner-2.png); -webkit-background-size:100%;}
+	.banner ul li:nth-child(3){background:url(img/banner-3.png); -webkit-background-size:100%;}
+	.banner ul li:nth-child(4){background:url(img/banner-4.png); -webkit-background-size:100%;}
+	.banner ul li:nth-child(5){background:url(img/banner-5.png); -webkit-background-size:100%;}
+	.banner ol{height:0.775rem; position:absolute; top:5.7rem; left:50%; margin-left:-0.9375rem;}
+	.banner ol li{height:0.25rem; width:0.25rem; border-radius:50%; background:#a9a9a9; float:left; margin:0 0.125rem; list-style:none;}
+</style>
+</head>
+
+<body>
+    <section class="swiper-container banner">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide"></li>
+            <li class="swiper-slide"></li>
+            <li class="swiper-slide"></li>
+            <li class="swiper-slide"></li>
+            <li class="swiper-slide"></li>
+        </ul>
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </section>
+<script src="js/swiper.min.js"></script>
+<script>
+	var mySwiper = new Swiper('.swiper-container',{
+		autoplay : 5000,
+		loop:true
+	});
+</script>
+</body>
+</html>

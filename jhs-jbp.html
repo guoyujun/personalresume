@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no" />
+<title>无标题文档</title>
+<link href="css/base.css" rel="stylesheet" />
+<style>
+	html{font-size:20px;}
+	.wrap{width:16rem;}
+	header{width:100%; height:2.525rem; background:-webkit-linear-gradient(#fff,#ebebeb); overflow:hidden; text-align:center;}
+	header .back{width:3.25rem; height:1.6rem; background:url(img/back.png); position:absolute; top:0.5rem; left:0.5rem; text-indent:-999rem; background-size:100%;}
+	header .logo{display:inline-block; width:9.4rem; height:2.2rem; font-size:0.65rem; color:#333; margin-top:0.175rem; line-height:2.2rem;}
+	header .classify{width:2.55rem; height:1.55rem; background:url(img/classify.png); position:absolute; top:0.5rem; background-size:100%; text-indent:-999rem; box-shadow:0 0 0.2rem #e1e1e1;}
+	nav{width:100%; height:2rem; border-bottom:0.025rem solid #dcdcdc;}
+	nav a{width:3.98125rem; height:100%; box-sizing:border-box; border-right:0.025rem solid #dcdcdc; text-align:center; line-height:2rem; font-size:0.6rem; color:#999; font-weight:bold;}
+	nav a:last-child{border-right:none;}
+	nav a:nth-child(4){color:#d51942;}
+	.banner{overflow:hidden; width:100%; height:6.7rem; border-bottom:0.025rem solid #dcdcdc;}
+	.banner ul{width:80rem; height:5.7rem;}
+	.banner ul li{width:16rem; height:5.7rem; float:left;}
+	.banner ul li img{width:16rem;}
+	.banner ol{width:2.5rem; height:0.2rem; margin:0.4rem auto;}
+	.banner ol li{width:0.2rem; height:0.2rem; border-radius:50%; background:#ccc; margin:0 0.15rem; float:left;}
+	.banner ol li.on{background:#333;}
+	.list .con{width:100%; height:4rem; box-sizing:border-box; border-bottom:0.025rem solid #dcdcdc; padding-top:1rem;}
+	.list .con img{width: margin-top:1rem; margin-left:0.85rem; }
+	.list .center h3{font-size:0.85rem; color:#6a237f; font-weight:bold; margin-left:1.15rem; margin-top:-0.2rem;}
+	.list .center p{font-size:0.55rem; color:#adadad; margin-left:1.15rem; margin-top:0.2rem;}
+	.list .right{font-size:0.7rem; color:#ccc; margin-right:0.9rem; font-weight:bold; margin-top:0.2rem;}
+</style>
+<script>
+	;(function(win,doc){
+		var rem = 20/320*doc.documentElement.clientWidth;
+		doc.documentElement.style.fontSize = rem+'px';
+		win.addEventListener('resize',function(){
+			rem = 20/320*doc.documentElement.clientWidth;
+			doc.documentElement.style.fontSize = rem+'px';	
+		},false);	
+	})(window,document);
+</script>
+</head>
+
+<body>
+	<section class="wrap">
+    	<header>
+        	<a href="jhs-home.html" class="back">返回</a>
+            <h2 class="logo">聚宝盆</h2>
+        </header>
+        <nav class="clearfix">
+        	<a href="jhs-goods.html" class="fl">商品</a>
+        	<a href="jhs-life.html" class="fl">生活</a>
+        	<a href="jhs-brand.html" class="fl">品牌</a>
+        	<a href="jhs-jbp.html" class="fl">聚宝盆</a>
+        </nav>
+    </section>
+    <section class="banner">
+    	<ul>
+        	<li><img src="img/jb.png"></li>
+        	<li><img src="img/jb.png"></li>
+        	<li><img src="img/jb.png"></li>
+        	<li><img src="img/jb.png"></li>
+        	<li><img src="img/jb.png"></li>
+        </ul>
+        <ol>
+        	<li></li>
+            <li></li>
+        	<li></li>
+            <li></li>
+        	<li></li>
+        </ol>
+    </section>
+    <section class="list">
+    	<div class="con clearfix">
+        	<img src="img/jm1.png" class="left fl">
+            <div class="center fl">
+            	<h3>聚名品</h3>
+                <p>轻奢购物第一站</p>
+            </div>
+            <span class="right fr">&gt;</span>
+        </div>
+    	<div class="con clearfix">
+        	<img src="img/jm2.png" class="left fl">
+            <div class="center fl">
+            	<h3>聚名品</h3>
+                <p>轻奢购物第一站</p>
+            </div>
+            <span class="right fr">&gt;</span>
+        </div>
+    	<div class="con clearfix">
+        	<img src="img/jm3.png" class="left fl">
+            <div class="center fl">
+            	<h3>聚名品</h3>
+                <p>轻奢购物第一站</p>
+            </div>
+            <span class="right fr">&gt;</span>
+        </div>
+    </section>
+</body>
+</html>

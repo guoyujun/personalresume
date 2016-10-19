@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no" />
+<title>无标题文档</title>
+<link href="css/base.css" rel="stylesheet" />
+<style>
+	html{font-size:20px;}
+	.wrap{width:16rem;}
+	header{width:100%; height:2.525rem; background:-webkit-linear-gradient(#fff,#ebebeb); overflow:hidden; text-align:center;}
+	header .back{width:3.25rem; height:1.6rem; background:url(img/back.png); position:absolute; top:0.5rem; left:0.5rem; text-indent:-999rem; background-size:100%;}
+	header .logo{display:inline-block; width:9.4rem; height:2.2rem; font-size:0.65rem; color:#333; margin-top:0.175rem; line-height:2.2rem;}
+	header .classify{width:2.55rem; height:1.55rem; background:url(img/classify.png); position:absolute; top:0.5rem; background-size:100%; text-indent:-999rem; box-shadow:0 0 0.2rem #e1e1e1;}
+	nav{width:100%; height:2rem; border-bottom:0.025rem solid #dcdcdc;}
+	nav a{width:3.98125rem; height:100%; box-sizing:border-box; border-right:0.025rem solid #dcdcdc; text-align:center; line-height:2rem; font-size:0.6rem; color:#999; font-weight:bold;}
+	nav a:last-child{border-right:none;}
+	nav a:nth-child(2){color:#d51942;}
+	.goods_list .list{width:100%; height:5rem; box-sizing:border-box; border-bottom:0.025rem solid #e1e1e1; padding:0.5rem; font-size:0.65rem;}
+	.goods_list img{width:6rem;}
+	.goods_list .right{width:7.55rem; height:100%; padding:0 0.7rem;}
+	.goods_list .right p span{color:#c3213c;}
+	.goods_list .right strong{width:100%; height:0.75rem; display:block; font-size:0.75rem;margin-top:0.4rem; color:#c3213c; margin-bottom:0.4rem;}
+	.goods_list .right strong .new{font-size:0.55rem;}
+	.goods_list .right strong .old{font-size:0.45rem; color:#999;}
+	.goods_list .right i{font-size:0.45rem; color:#999;}
+</style>
+<script>
+	;(function(win,doc){
+		var rem = 20/320*doc.documentElement.clientWidth;
+		doc.documentElement.style.fontSize = rem+'px';
+		win.addEventListener('resize',function(){
+			rem = 20/320*doc.documentElement.clientWidth;
+			doc.documentElement.style.fontSize = rem+'px';	
+		},false);	
+	})(window,document);
+</script>
+</head>
+
+<body>
+	<section class="wrap">
+    	<header>
+        	<a href="jhs-home.html" class="back">返回</a>
+            <h2 class="logo">杭州 生活团</h2>
+            <a href="javascript:;" class="classify">分类</a>
+        </header>
+        <nav class="clearfix">
+        	<a href="jhs-goods.html" class="fl">商品</a>
+        	<a href="jhs-life.html" class="fl">生活</a>
+        	<a href="jhs-brand.html" class="fl">品牌</a>
+        	<a href="jhs-jbp.html" class="fl">聚宝盆</a>
+        </nav>
+    </section>
+    <section class="goods_list">
+    	<div class="list clearfix">
+        	<div class="left fl">
+            	<img src="img/l1.png">
+            </div>
+            <div class="right fl">
+            	<p><span>1.2折</span>&nbsp;新田园，林下散养草鸡蛋40枚 纯天然无误</p>
+                <strong><span class="new">￥</span>51.00<span class="old">&nbsp;&nbsp;&nbsp;￥96.00</span></strong>
+                <i>1240人已购买</i>
+            </div>
+        </div>
+    	<div class="list clearfix">
+        	<div class="left fl">
+            	<img src="img/l2.png">
+            </div>
+            <div class="right fl">
+            	<p><span>1.2折</span>&nbsp;新田园，林下散养草鸡蛋40枚 纯天然无误</p>
+                <strong><span class="new">￥</span>51.00<span class="old">&nbsp;&nbsp;&nbsp;￥96.00</span></strong>
+                <i>1240人已购买</i>
+            </div>
+        </div>
+    	<div class="list clearfix">
+        	<div class="left fl">
+            	<img src="img/l3.png">
+            </div>
+            <div class="right fl">
+            	<p><span>1.2折</span>&nbsp;新田园，林下散养草鸡蛋40枚 纯天然无误</p>
+                <strong><span class="new">￥</span>51.00<span class="old">&nbsp;&nbsp;&nbsp;￥96.00</span></strong>
+                <i>1240人已购买</i>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
